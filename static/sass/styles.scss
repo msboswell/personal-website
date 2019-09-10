@@ -1,0 +1,40 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
+@mixin background {
+	& {
+		background: url(/static/images/banner2.jpg) !important;
+		background-size: cover !important;
+		z-index: 1;
+
+		&:after {
+			content: '' !important;
+			position: absolute !important;
+			top: 0 !important;
+			left: 0 !important;
+			width: 100vw !important;
+			height: 100vh !important;
+			// width: 237% !important;
+			// height: 237% !important;
+			z-index: -1 !important;
+			background: rgba($color-secondary, 0.5);
+		}
+
+	}
+}
+
+body,
+h1,
+h2,
+h3 {
+	font-family: Poppins, sans-serif !important;
+	// color: $color-primary !important;
+}
+
+.bg-img {
+	@include background;
+}
+
+.active-link {
+	border-bottom: 3px solid $color-primary !important;
+}
