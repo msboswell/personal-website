@@ -42,7 +42,7 @@ export default () => (
 						Footer Header
 						</Header>
 						<p>
-							Hey, you reached the bottom of the page! While you"re here, why not check out my socials?
+							Hey, you reached the bottom of the page! While you're here, why not check out my socials?
 						</p>
 						<List link inverted horizontal>
 							<Link href="https://github.com/msboswell">

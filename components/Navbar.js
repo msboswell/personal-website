@@ -34,16 +34,18 @@ const Navbar = ({ fixed, transparent }) => {
 		>
 			<Container style={{ marginBottom: "0.5rem" }}>
 				<Link href="/">
-					<Menu.Item as="a" header className={fmtClass("/")}>
-						Miles Boswell
-					</Menu.Item>
+					<Menu.Item as="a" header className={fmtClass("/")}>Miles Boswell</Menu.Item>
 				</Link>
 				<Link href="/tutor">
 					<Menu.Item as="a" header className={fmtClass("/tutor")}>Tutoring</Menu.Item>
 				</Link>
-				<Link href="/contact">
-					<Menu.Item as="a" header className={fmtClass("/contact")}>Contact</Menu.Item>
+				<Link href="/notes">
+					<Menu.Item as="a" header className={fmtClass("/notes")}>Notes Blog</Menu.Item>
 				</Link>
+
+				{/* }<Link href="/contact">
+					<Menu.Item as="a" header className={fmtClass("/contact")}>Contact</Menu.Item>
+				</Link> */}
 
 				<Menu.Item position="right">
 					<Link href="#"><Button as="a" inverted>Sign Up</Button></Link>

@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import About from '../content/About';
-import Services from '../content/Services';
+import Projects from '../content/Projects';
 import '../static/sass/styles.scss';
 
 const MainContent = () => (
@@ -62,7 +62,7 @@ export default () => {
 			</Visibility>
 
 			<About />
-			<Services />
+			<Projects />
 		</Layout>
 	);
 }

@@ -1,7 +1,7 @@
-// content/Services.js
+// content/Projects.js
 import { Segment, Grid, Card } from 'semantic-ui-react';
 
-export default () => (
+const Projects = () => (
 	<Segment style={{ padding: "8em 0em" }} vertical>
 		<Grid container stackable verticalAlign="middle">
 			<Grid.Row>
@@ -30,3 +30,5 @@ export default () => (
 		</Grid>
 	</Segment>
 );
+
+export default Projects;
