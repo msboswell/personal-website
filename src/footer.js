@@ -16,7 +16,6 @@ const useStyles = makeStyles({
 
 export default () => {
 	const classes = useStyles();
-
 	return (
 		<Container className={classes.footer}>
 			<Typography variant="h5">Footer</Typography>
