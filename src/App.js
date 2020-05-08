@@ -27,7 +27,7 @@ export default () => {
 	return (
 		<ThemeProvider theme={general}>
 			<div className={classes.pageContainer}>
-				<Navbar />
+				<Navbar transparent={false} /> {/* TODO conditional transparency */}
 					<Container maxWidth="xl" className={classes.container}>
 						<Route exact path="/" component={Home}	/>
 						<Route path="/blog" component={Posts}	/>
