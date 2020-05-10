@@ -9,6 +9,7 @@ Source code repo for my personal website, hosted at
 ## TODO
 
 - [x] Recreate homepage with background image
+- [ ] Add favicon
 - [ ] Add content to footer
 - [ ] On Github Push, automatically re-build and redeploy on production server
 - [ ] Add blog to `/blog` route
