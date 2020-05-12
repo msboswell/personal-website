@@ -26,11 +26,11 @@ export default () => {
   return (
     <ThemeProvider theme={general}>
       <div className={classes.pageContainer}>
-        <Navbar transparent={false} /> {/* TODO conditional transparency */}
+        <Navbar />
         <Container maxWidth="xl" className={classes.container}>
           <Route exact path="/" component={Home} />
-          <Route path="/blog" component={Posts} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/blog/" component={Posts} />
+          <Route path="/contact/" component={Contact} />
         </Container>
         <Footer />
       </div>

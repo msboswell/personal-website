@@ -15,10 +15,6 @@ const useStyles = makeStyles({
     fontStyle: 'oblique',
     flex: 'none', // change to 1 to push everything else to right
   },
-  transparent: {
-    background: 'transparent',
-    color: 'black',
-  },
 });
 
 const Item = ({ path, children }) => (
@@ -31,11 +27,11 @@ const Item = ({ path, children }) => (
   </ListItemText>
 );
 
-export default ({ transparent }) => {
+export default () => {
   const classes = useStyles();
 
   return (
-    <AppBar color={transparent ? 'transparent' : 'primary'} position="static">
+    <AppBar color="primary" position="static">
       <Toolbar>
         <Link
           href="/"
@@ -47,8 +43,8 @@ export default ({ transparent }) => {
         </Link>
         <List component="nav">
           <ListItem component="div">
-            <Item path="/blog">Blog</Item>
-            <Item path="/contact">Contact</Item>
+            <Item path="/blog/">Blog</Item>
+            <Item path="/contact/">Contact</Item>
           </ListItem>
         </List>
       </Toolbar>
