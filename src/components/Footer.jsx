@@ -6,9 +6,9 @@ import { Grid } from '@material-ui/core';
 const useStyles = makeStyles({
   footer: {
     position: 'absolute',
-    bottom: '-6rem',
+    bottom: '-8rem',
     minWidth: '100%',
-    height: '6rem',
+    height: '8rem',
     padding: '4rem 12rem',
     backgroundColor: '#252525',
     color: 'white',
