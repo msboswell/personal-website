@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import PageNotFound from './pages/PageNotFound';
 import Home from './pages/Home';
 import Posts from './pages/Posts';
 import general from './theme.js';
@@ -28,9 +30,13 @@ export default () => {
       <div className={classes.pageContainer}>
         <Navbar />
         <Container maxWidth="xl" className={classes.container}>
-          <Route exact path="/" component={Home} />
-          <Route path="/blog/" component={Posts} />
-          <Route path="/contact/" component={Contact} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/blog/" component={Posts} />
+            <Route path="/contact/" component={Contact} />
+            <Route path="/login/" component={Login} />
+            <Route component={PageNotFound} />
+          </Switch>
         </Container>
         <Footer />
       </div>

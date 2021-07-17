@@ -7,6 +7,7 @@ import {
   Typography,
   AppBar,
   Toolbar,
+  Button,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -14,6 +15,10 @@ const useStyles = makeStyles({
   header: {
     fontStyle: 'oblique',
     flex: 'none', // change to 1 to push everything else to right
+  },
+  login: {
+    position: 'absolute',
+    right: '2rem',
   },
 });
 
@@ -47,6 +52,11 @@ export default () => {
             <Item path="/contact/">Contact</Item>
           </ListItem>
         </List>
+        <Typography color="inherit" variant="h6" className={classes.login}>
+          <Button color="secondary" variant="contained" href="/login/">
+            Login
+          </Button>
+        </Typography>
       </Toolbar>
     </AppBar>
   );
