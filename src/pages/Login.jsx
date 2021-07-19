@@ -9,9 +9,9 @@ import {
 } from '@material-ui/core';
 
 export default () => {
-  const [state, setState] = useState({});
+  const [state] = useState({});
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(state);
   };
